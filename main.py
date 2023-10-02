@@ -20,7 +20,7 @@ default_img = pygame.image.load('media/character_sprites/good/default.png')
 wizard_img = pygame.image.load('media/character_sprites/good/wizard.png')
 robes_img = pygame.transform.scale(pygame.image.load('media/character_sprites/good/robes.png'), (100, 92))
 wizard_robes_img = pygame.transform.scale(pygame.image.load('media/character_sprites/good/wizard_robes.png'), (100, 92))
-armor_img = pygame.transform.scale(pygame.image.load('media/character_sprites/good/armor.png'), (100, 92))
+armor_img = pygame.transform.scale(pygame.image.load('media/character_sprites/good/armor.png'), (100, 92)).convert_alpha()
 armor_helmet_img = pygame.transform.scale(pygame.image.load('media/character_sprites/good/armor_helmet.png'), (100, 92))
 zombie_img = pygame.image.load('media/character_sprites/bad/zombie.png')
 archer_img = pygame.image.load('media/character_sprites/bad/archer.png')
@@ -48,7 +48,7 @@ skilltree_img = pygame.image.load('media/misc/skilltree.png')
 fasterswings_img = pygame.image.load('media/skills/fasterswings.png')
 skull_img = pygame.image.load('media/misc/skull.png')
 
-dev_mode = 0
+dev_mode = 1
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
@@ -65,7 +65,7 @@ class Player(pygame.sprite.Sprite):
         self.invincibility = 0
         self.max_health = 3
         self.health = 3
-        self.money = 0
+        self.money = 60
         self.ward_cooldown = 0
         self.ward_rotate = 0
         self.killcount = 0
@@ -134,6 +134,7 @@ class Player(pygame.sprite.Sprite):
 
     
     def draw(self):
+        print(self.img.get_alpha())
         mouse_pos = pygame.math.Vector2(mx, my)
         angle = math.degrees(math.atan2( (mouse_pos.y - self.pos.y), (mouse_pos.x - self.pos.x))) * (-1) - 90
         self.img = pygame.transform.rotate(self.img_copy, angle)
