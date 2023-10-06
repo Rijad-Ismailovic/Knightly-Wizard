@@ -5,6 +5,6 @@ In the end, i think it would have looked better if i just used 4 dimensional mov
 You play as a man who, as in my previous game, has to fend off a horde of zombies. Each zombie he kills awards him with some money which he uses to buy upgrades from the skill tree.
 He can either choose to go down the path of the noble knight or the clever wizard. It is up to you to decide.
 
-To play the game, run the "Laser Bound" file. I made it a shortcut for ease of use.
+To play the game, run the "Knightly Wizard" file. I made it a shortcut for ease of use.
 
 Enjoy !!
