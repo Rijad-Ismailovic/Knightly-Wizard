@@ -9,3 +9,10 @@ To play the game, go into the "dist" folder and run main.exe.
 Windows may detect it as a virus because Windows flags programs made with PyInstaller as a virus as a result of many people making viruses with PyInstaller.
 
 Enjoy !!
+
+GAME SCREENSHOTS:
+https://github.com/Rijad-Ismailovic/Knightly-Wizard/blob/main/media/misc/kw1.png?raw=true
+https://github.com/Rijad-Ismailovic/Knightly-Wizard/blob/main/media/misc/kw2.png?raw=true
+https://github.com/Rijad-Ismailovic/Knightly-Wizard/blob/main/media/misc/kw3.png?raw=true
+
+
